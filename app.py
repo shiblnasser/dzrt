@@ -5,8 +5,12 @@ from telegram.ext import Updater, CommandHandler, CallbackContext
 import threading
 import time
 
-BOT_TOKEN = "7395492548:AAGOhD1zXKNn3FgSqyd4mnoYhkbfxiaWDHE"
-CHAT_ID = None  # Will be set when the user sends /start
+from keep_alive import keep_alive
+
+keep_alive()
+
+BOT_TOKEN = "6887561344:AAHKTK9FoMyO7zEB6YZqyR6MjQmhywG2wjc"
+CHAT_ID = -1002155752084  # Will be set when the user sends /start
 PRODUCT_URLS = [
     "https://www.dzrt.com/en/seaside-frost.html",
     "https://www.dzrt.com/en/purple-mist.html",
